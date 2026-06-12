@@ -1,7 +1,9 @@
 # mcp-for-automotive
 
-- [Scope of MCP Servers, MCP Clients](scope.md)
-- [Use cases related to Infotainment, Telematics, ADAS etc](usecases.md)
-- [Technical Hints: C++ & RUST libraries](tech-impl.md)
-- [Architectural considerations & Placing Strategies](arch-strategy.md)
-- [Challenges and Solutions](challenges.md)
+- Simple Calculator
+- MCP for MQTT Publish & Subscribe
+- MCP for HTTP REST
+- MCP for serial interfacing
+- MCP for CANBus (socketcan)
+- MCP for IOT Gateway
+- MCP for SQLite
