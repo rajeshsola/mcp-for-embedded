@@ -1,0 +1,19 @@
+# FastMCP framework (includes the mcp SDK used by the clients)
+fastmcp
+mcp
+
+# socketcan_mcp.py
+python-can
+
+# mqtt_mcp.py
+paho-mqtt
+
+# http_rest_mcp.py
+httpx
+
+# grpc_mcp.py
+grpcio
+grpcio-reflection
+protobuf
+
+# sqlite_mcp.py — uses stdlib sqlite3, no extra packages needed
