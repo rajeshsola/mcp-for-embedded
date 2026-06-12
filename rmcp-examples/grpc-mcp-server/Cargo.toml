@@ -1,0 +1,18 @@
+[package]
+name = "grpc-mcp-server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rmcp = { version = "0.16.0", features = ["server", "macros", "transport-io"] }
+tonic = { version = "0.14", features = ["transport"] }
+prost = "0.14"
+prost-reflect = { version = "0.16", features = ["serde"] }
+prost-types = "0.14"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+bytes = "1"
+futures = "0.3"
+http = "1"
+anyhow = "1"

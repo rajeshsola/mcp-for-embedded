@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package examples;
+
+// A simple service demonstrating three unary RPC methods.
+service Examples {
+    rpc SayHello    (HelloRequest)    returns (HelloReply);
+    rpc Add         (MathRequest)     returns (MathReply);
+    rpc Multiply    (MathRequest)     returns (MathReply);
+}
+
+message HelloRequest {
+    string name = 1;
+}
+
+message HelloReply {
+    string message = 1;
+}
+
+// Shared request/reply types for the arithmetic methods.
+message MathRequest {
+    double a = 1;
+    double b = 2;
+}
+
+message MathReply {
+    double result = 1;
+}
