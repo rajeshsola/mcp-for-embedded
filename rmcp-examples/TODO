@@ -1,0 +1,5 @@
+```
+ANTHROPIC_API_KEY=sk-ant-... \
+  cargo run --bin can-llm-agent -- vcan0 localhost 1883 ./target/debug/socketcan-mcp
+
+```

@@ -1,0 +1,25 @@
+[package]
+name = "my-first-rig-project"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rig-core = { version = "0.35.0", features = ["rmcp"] }
+rmcp = { version = "1", features = ["client", "transport-child-process", "macros"] }
+tokio = { version = "1.52.1", features = ["macros", "rt-multi-thread", "process"] }
+
+[[bin]]
+name = "hello-agent"
+path = "src/hello_agent.rs"
+
+[[bin]]
+name = "agent-with-preamble"
+path = "src/agent_with_preamble.rs"
+
+[[bin]]
+name = "agent-with-context"
+path = "src/agent_with_context.rs"
+
+[[bin]]
+name = "mcp-tool-agent"
+path = "src/mcp_tool_agent.rs"

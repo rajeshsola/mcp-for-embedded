@@ -1,0 +1,11 @@
+[package]
+name = "hello-mcp-server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rmcp = { version = "0.16.0", features = ["server", "macros", "transport-io"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "io-util"] }
+serde = { version = "1", features = ["derive"] }
+schemars = "0.8"
+anyhow = "1"

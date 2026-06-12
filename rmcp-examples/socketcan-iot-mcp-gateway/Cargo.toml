@@ -1,0 +1,27 @@
+[package]
+name = "socketcan-iot-mcp-gateway"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "socketcan-mcp"
+path = "src/main.rs"
+
+[[bin]]
+name = "can-mqtt-gateway"
+path = "src/gateway.rs"
+
+[[bin]]
+name = "can-llm-agent"
+path = "src/agent.rs"
+
+[dependencies]
+rmcp = { version = "0.16.0", features = ["server", "macros", "transport-io"] }
+socketcan = "3"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "time", "process", "io-util"] }
+rumqttc = "0.24"
+rig-core = "0.38"
+serde = { version = "1", features = ["derive"] }
+schemars = "1.0"
+anyhow = "1"
+serde_json = "1"

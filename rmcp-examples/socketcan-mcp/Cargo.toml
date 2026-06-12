@@ -1,0 +1,12 @@
+[package]
+name = "socketcan-mcp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rmcp = { version = "0.16.0", features = ["server", "macros", "transport-io"] }
+socketcan = "3"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+serde = { version = "1", features = ["derive"] }
+schemars = "0.8"
+anyhow = "1"
